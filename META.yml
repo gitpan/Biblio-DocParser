@@ -1,0 +1,23 @@
+--- #YAML:1.0
+name: Biblio-DocParser
+version: 1.10
+license: gpl
+distribution_type: module
+requires:
+  File::Temp: 0
+  HTML::HeadParser: 0
+  LWP::UserAgent: 0
+recommends: {}
+build_requires: {}
+conflicts: {}
+provides:
+  Biblio::DocParser:
+    file: lib/Biblio/DocParser.pm
+    version: 1.10
+  Biblio::DocParser::Brody:
+    file: lib/Biblio/DocParser/Brody.pm
+  Biblio::DocParser::Standard:
+    file: lib/Biblio/DocParser/Standard.pm
+  Biblio::DocParser::Utils:
+    file: lib/Biblio/DocParser/Utils.pm
+generated_by: Module::Build version 0.19
